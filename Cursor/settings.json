@@ -1,0 +1,21 @@
+{
+    "window.commandCenter": true,
+    "editor.fontFamily": "'JetBrains Mono'",
+    "workbench.iconTheme": "vscode-jetbrains-icon-theme-2023-dark",
+    "cursor.cpp.disabledLanguages": [
+        "markdown",
+        "plaintext"
+    ],
+    "editor.fontSize": 11,
+    "workbench.colorTheme": "Catppuccin Mocha",
+    "terminal.integrated.fontFamily": "'JetBrainsMono Nerd Font Mono'",
+    "terminal.integrated.fontSize": 12,
+    "workbench.colorCustomizations": {
+      "statusBar.background": "#B48EAD",
+      "statusBar.noFolderBackground": "#B48EAD",
+      "statusBar.debuggingBackground": "#B48EAD",
+      "statusBar.foreground": "#434C5E",
+      "statusBar.debuggingForeground": "#434C5E"
+    },
+    "window.zoomLevel": 1
+}
