@@ -11,11 +11,41 @@
     "terminal.integrated.fontFamily": "'JetBrainsMono Nerd Font Mono'",
     "terminal.integrated.fontSize": 12,
     "workbench.colorCustomizations": {
-      "statusBar.background": "#B48EAD",
-      "statusBar.noFolderBackground": "#B48EAD",
-      "statusBar.debuggingBackground": "#B48EAD",
+      "statusBar.background": "#8FBCBB",
+      "statusBar.noFolderBackground": "#8FBCBB",
+      "statusBar.debuggingBackground": "#8FBCBB",
       "statusBar.foreground": "#434C5E",
       "statusBar.debuggingForeground": "#434C5E"
     },
-    "window.zoomLevel": 1
+    "window.zoomLevel": 1,
+
+    "vim.insertModeKeyBindings": [
+      { "before": ["j", "j"], "after": ["<Esc>"] },
+      { "before": ["j", "k"], "after": ["<Esc>"] }
+    ],
+
+    "vim.normalModeKeyBindingsNonRecursive": [
+      //Window/Group Navigation
+      { "before": ["<leader>", "h"], "commands": ["workbench.action.focusLeftGroup"] },
+      { "before": ["<leader>", "j"], "commands": ["workbench.action.focusBelowGroup"] },
+      { "before": ["<leader>", "k"], "commands": ["workbench.action.focusAboveGroup"] },
+      { "before": ["<leader>", "l"], "commands": ["workbench.action.focusRightGroup"] },
+
+      //Splits
+      { "before": ["<leader>", "v"], "commands": [":vsplit"] },
+      { "before": ["<leader>", "s"], "commands": [":split"] },
+
+      // Buffer Navigation
+      { "before": ["<S-h>"], "commands": ["workbench.action.previousEditor"] },
+      { "before": ["<S-l>"], "commands": ["workbench.action.nextEditor"] },
+
+      //File operations
+      { "before": ["<leader>", "w"], "commands": ["workbench.action.files.save"] },
+      { "before": ["<leader>", "q"], "commands": ["workbench.action.closeActiveEditor"] },
+
+      //Quick Actions
+      { "before": ["<leader>", "f"], "commands": ["workbench.action.quickOpen"] },
+      { "before": ["<leader>", "p"], "commands": ["workbench.action.showCommands"] },
+      { "before": ["<leader>", "e"], "commands": ["workbench.view.explorer"] }
+    ]
 }
