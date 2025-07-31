@@ -1,51 +1,66 @@
 {
-    "window.commandCenter": true,
-    "editor.fontFamily": "'JetBrains Mono'",
-    "workbench.iconTheme": "vscode-jetbrains-icon-theme-2023-dark",
-    "cursor.cpp.disabledLanguages": [
-        "markdown",
-        "plaintext"
-    ],
-    "editor.fontSize": 11,
-    "workbench.colorTheme": "Catppuccin Mocha",
-    "terminal.integrated.fontFamily": "'JetBrainsMono Nerd Font Mono'",
-    "terminal.integrated.fontSize": 12,
-    "workbench.colorCustomizations": {
-      "statusBar.background": "#8FBCBB",
-      "statusBar.noFolderBackground": "#8FBCBB",
-      "statusBar.debuggingBackground": "#8FBCBB",
-      "statusBar.foreground": "#434C5E",
-      "statusBar.debuggingForeground": "#434C5E"
-    },
-    "window.zoomLevel": 1,
+  "editor.tabSize": 2,
 
-    "vim.insertModeKeyBindings": [
-      { "before": ["j", "j"], "after": ["<Esc>"] },
-      { "before": ["j", "k"], "after": ["<Esc>"] }
-    ],
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "files.associations": { "*.arb": "ruby" },
+  "files.autoSave": "onFocusChange",
 
-    "vim.normalModeKeyBindingsNonRecursive": [
-      //Window/Group Navigation
-      { "before": ["<leader>", "h"], "commands": ["workbench.action.focusLeftGroup"] },
-      { "before": ["<leader>", "j"], "commands": ["workbench.action.focusBelowGroup"] },
-      { "before": ["<leader>", "k"], "commands": ["workbench.action.focusAboveGroup"] },
-      { "before": ["<leader>", "l"], "commands": ["workbench.action.focusRightGroup"] },
+  "rubyLsp.bundleGemfile": "~/projects/vscode-ruby-lsp/Gemfile",
 
-      //Splits
-      { "before": ["<leader>", "v"], "commands": [":vsplit"] },
-      { "before": ["<leader>", "s"], "commands": [":split"] },
+  "vim.leader": "<space>",
+  "vim.useSystemClipboard": true,
+  "vim.useCtrlKeys": true,
+  "vim.hlsearch": true,
+  "vim.incsearch": true,
+  "vim.ignorecase": true,
+  "vim.smartcase": true,
+  "vim.surround": true,
+  "vim.easymotion": true,
+  "vim.highlightedyank.enable": true,
+  "vim.highlightedyank.duration": 200,
+  "vim.highlightedyank.color": "rgba(250, 240, 170, 0.5)",
+  "vim.smartRelativeLine": true,
+  "vim.history": 1000,
+  "vim.foldfix": true,
+  "vim.cursorStylePerMode.insert": "line",
+  "vim.cursorStylePerMode.normal": "block",
+  "vim.cursorStylePerMode.replace": "underline",
+  "vim.statusBarColorControl": true,
+  "vim.statusBarColors.normal": ["#8FBCBB", "#434C5E"],
+  "vim.statusBarColors.insert": "#BF616A",
+  "vim.statusBarColors.visual": "#B48EAD",
+  "vim.statusBarColors.visualline": "#B48EAD",
+  "vim.statusBarColors.visualblock": "#A3BE8C",
+  "vim.statusBarColors.replace": "#D08770",
 
-      // Buffer Navigation
-      { "before": ["<S-h>"], "commands": ["workbench.action.previousEditor"] },
-      { "before": ["<S-l>"], "commands": ["workbench.action.nextEditor"] },
+  // Handle keys to prevent conflicts
+  "vim.handleKeys": {
+    "<C-a>": false,
+    "<C-f>": false,
+    "<C-c>": false,
+    "<C-v>": false,
+    "<C-x>": false,
+    "<C-z>": false,
+    "<C-s>": false,
+    "<C-n>": false,
+    "<C-p>": false,
+    "<C-j>": false,
+    "<C-b>": false,
+    "<C-h>": false,
+    "<C-l>": false
+  },
 
-      //File operations
-      { "before": ["<leader>", "w"], "commands": ["workbench.action.files.save"] },
-      { "before": ["<leader>", "q"], "commands": ["workbench.action.closeActiveEditor"] },
-
-      //Quick Actions
-      { "before": ["<leader>", "f"], "commands": ["workbench.action.quickOpen"] },
-      { "before": ["<leader>", "p"], "commands": ["workbench.action.showCommands"] },
-      { "before": ["<leader>", "e"], "commands": ["workbench.view.explorer"] }
-    ]
+  "[typescript]": {
+    "editor.formatOnSave": false
+  },
+  "[javascript]": {
+    "editor.formatOnSave": false
+  },
+  "[css]": {
+    "editor.formatOnSave": true
+  },
+  "[scss]": {
+    "editor.formatOnSave": true
+  }
 }
