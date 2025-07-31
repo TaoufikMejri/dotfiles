@@ -1,0 +1,44 @@
+[
+    {
+        "key": "ctrl+i",
+        "command": "composerMode.agent"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "workbench.action.terminal.clear"
+    },
+    {
+        "key": "ctrl+g",
+        "command": "lazygit.openLazygit"
+    },
+    {
+        "key": "ctrl+g g",
+        "command": "-lazygit.openLazygit"
+    },
+    {
+        "key": "alt+n",
+        "command": "workbench.action.terminal.new"
+    },
+    {
+        "key": "alt+j",
+        "command": "workbench.action.terminal.focusNext"
+    },
+    {
+        "key": "alt+k",
+        "command": "workbench.action.terminal.focusPrevious"
+    },
+    {
+        "key": "alt+r",
+        "command": "workbench.action.terminal.rename",
+        "when": "terminalFocus || terminalIsOpen"
+    },
+    {
+        "key": "alt+f",
+        "command": "workbench.action.terminal.focus",
+        "when": "terminalIsOpen"
+    },
+    {
+        "key": "alt+e",
+        "command": "workbench.action.focusActiveEditorGroup"
+    }
+]
