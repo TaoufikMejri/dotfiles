@@ -28,9 +28,9 @@
         "command": "workbench.action.terminal.focusPrevious"
     },
     {
-        "key": "alt+r",
+        "key": "ctrl+shift+r",
         "command": "workbench.action.terminal.rename",
-        "when": "terminalFocus || terminalIsOpen"
+        "when": "terminalIsOpen || terminalFocus"
     },
     {
         "key": "alt+f",
