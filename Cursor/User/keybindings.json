@@ -40,5 +40,10 @@
     {
         "key": "alt+e",
         "command": "workbench.action.focusActiveEditorGroup"
-    }
+    },
+    {
+	"key": "ctrl+l",
+	"command": "workbench.action.terminal.clear",
+	"when": "terminalFocus"
+
 ]
